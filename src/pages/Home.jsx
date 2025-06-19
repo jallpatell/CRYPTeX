@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Shield, Zap, Globe, Lock, Smartphone, ArrowRight, Check, Star, Users, TrendingUp } from 'lucide-react';
+import { Typewriter } from 'react-simple-typewriter'
 
 
 import Navbar from './Navbar';
@@ -10,11 +11,21 @@ import Footer from './Footer';
 
 export default function CryptexLanding() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white">
+    <div className="min-h-screen overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black text-white">
       {/* Navigation */}
         <Navbar />
 
-      
+      <h1 className="text-3xl  md:text-5xl font-mono font-bold text-center text-white">
+      <Typewriter
+        words={['Welcome to CRYPTeX', 'Secure. Store. Swap.', 'Your crypto, your control.']}
+        loop={true}
+        cursor
+        cursorStyle="|"
+        typeSpeed={70}
+        deleteSpeed={50}
+        delaySpeed={1500}
+      />
+    </h1>
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
