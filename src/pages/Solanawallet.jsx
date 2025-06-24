@@ -32,5 +32,3 @@ export default function SolanaWallet({ mnemonic, publicKeys, setPublicKeys, curr
         
     </div>
 }
-
-

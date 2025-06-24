@@ -1,3 +1,4 @@
+
 export default function Footer(){
     return <div>
     <footer className="border-2 border-[#000000] bg-black  p-10">
@@ -20,9 +21,22 @@ export default function Footer(){
                 <a href="https://x.com/jallpatell" target="_blank" className="font-extrabold hover:text-white" rel="noopener noreferrer">
                     Reach me @X
                 </a>
+export default function Footer() {
+    return (
+      <footer className="border-t border-gray-800 py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-left space-x-2 mb-4 md:mb-0">
+              
+              <span className="text-lg font-bold">CRYPTeX</span>
+            </div>
+            <div className="text-gray-400 text-sm">
+              © 2025 CRYPTeX. Built for the decentralized future. <br></br>
+              Connect to X. at @jallpatell
             </div>
           </div>
         </div>
       </footer>
       </div>
 }
+
