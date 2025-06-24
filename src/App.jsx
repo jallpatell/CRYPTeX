@@ -1,10 +1,21 @@
+import { Link, HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import CryptexLanding from '@/pages/Home'
+import CryptexLanding from './pages/Home'
+import Portfolio from './pages/Portfolio'
+import Wallet from './pages/Wallet'
 
-function App() {
+export default function App() {
   return (
-    <CryptexLanding />
+    <div >
+    <HashRouter> 
+        <Routes>
+          <Route path="/" element={<CryptexLanding />} />
+          <Route path="/wallet" element={<Wallet />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="*" element={<div>404 Not Found</div>} />
+        </Routes>
+      </HashRouter>
+    </div>
   )
 }
 
-export default App
